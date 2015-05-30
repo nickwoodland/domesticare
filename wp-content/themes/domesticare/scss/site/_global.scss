@@ -1,0 +1,80 @@
+/* 
+ Global styles for FoundationPress
+ Demo: http://foundationpress.olefredrik.com
+*/
+
+// Prettify type rendering
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+// Reset margin and padding on figure element
+figure { 
+	margin: 0; 
+	padding: 0;
+}
+
+// Add some basic styling for figcaption element
+figcaption {
+	margin-bottom: rem-calc(20);
+	margin-top: rem-calc(10); 
+	color: #6f6f6f; 
+}
+
+// Add the alignment classes used by the WordPress media library
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+blockquote.alignleft,
+img.alignleft {
+	margin: rem-calc(7) rem-calc(24) rem-calc(7) 0;
+}
+
+.wp-caption.alignleft {
+	margin: rem-calc(7) rem-calc(14) rem-calc(7) 0;
+}
+
+blockquote.alignright,
+img.alignright {
+	margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
+}
+
+.pad-wrapper{
+	padding-left:$rem-base;
+	padding-right:$rem-base;
+}
+
+.site-title{
+	h1, h2 {
+		line-height:1;
+	}
+	h1{
+		font-size: rem-calc(72px);
+		a{
+			color:$primary-color;	
+			font-weight:400;
+			font-family: 'Droid Serif', serif;
+		}
+	}
+
+	h2{
+		font-size: rem-calc(18px);
+		a{
+			color:$dark-text;
+			font-weight:400;
+		}
+	}
+}

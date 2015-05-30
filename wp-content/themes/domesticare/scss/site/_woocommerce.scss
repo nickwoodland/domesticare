@@ -1,0 +1,31 @@
+.woocommerce-breadcrumb, .woocommerce-result-count{
+	display:inline-block;
+	margin-right:$rem-base;
+	font-size:rem-calc(16px);
+}
+
+input[type="search"].search-field{
+	margin-bottom:4px;
+}
+
+.woocommerce-message{
+	@extend .pad;
+	@extend .landmark;
+	background-color:$gainsboro;
+}
+.shop_table.cart{
+	width:100%;
+}
+
+.page-numbers{
+	text-align:center;
+	
+	li{
+		display:inline-block;
+		margin-right:$rem-base/2;
+	}
+}
+
+.products-list{
+	min-height:330px;
+}

@@ -1,0 +1,40 @@
+// Add some whitespace above the footer for medium-up screens
+@media #{$medium-up} {
+	footer.row {
+		margin-top: rem-calc(60);
+	}
+}
+
+footer{
+	color: $white;
+	background-color:$primary-color;
+	font-family: Verdana,Geneva,sans-serif;
+
+	h6 {
+		color:$white;
+		font-size:inc-rem(16px);
+		font-weight:600;
+	}
+	ul{
+		list-style:none;
+		margin-left:0px;
+	}
+	span, a {
+		margin-right:$rem-base/2;
+		font-weight:500;
+		font-size:rem-calc(14px);
+		color: $white;
+
+	}
+	a {
+		
+		&:hover {
+			color:$gainsboro;
+		}
+	}
+
+	.vcard {
+		border:0px;
+		padding:0px;
+	}
+}

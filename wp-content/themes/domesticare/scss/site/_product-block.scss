@@ -1,0 +1,49 @@
+.product-block {
+	background-color:$steel;
+
+	h3{
+		font-size:rem-calc(13px);
+		margin:0px;
+		overflow:hidden;
+		color: $white;
+	}
+
+	.product-block__price{
+		font-size: rem-calc(13px);
+		color: $white;
+		span{
+			white-space:nowrap;
+		}
+	}
+
+	span {
+		font-size: rem-calc(13px);
+		display:block;
+		margin:0px;
+		color: $white;
+	}
+
+
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+	.quantity, .quantity input{
+		width:100%;
+	}
+}
+
+.brand-block{
+	.brand-block__img{
+		border:2px solid $white;
+	}
+}
+
+
+.product-block {
+		.cta-block__text{
+		text-align:center;
+		color: $white;
+		background-color:$steel;
+		line-height: $rem-base;
+	}
+}

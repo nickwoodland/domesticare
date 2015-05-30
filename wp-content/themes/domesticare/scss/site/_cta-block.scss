@@ -1,0 +1,24 @@
+.cta-block, .product-block {
+
+	position:relative;
+
+	
+
+	&:hover {
+
+		.cta-block__text {
+			@include vendor(transition, all 0.25s);
+			background-color:lighten($steel, 10%);
+		}
+
+	}
+
+
+
+	.cta-block__text{
+		text-align:center;
+		color: $white;
+		background-color:$steel;
+		line-height: $rem-base;
+	}
+}
