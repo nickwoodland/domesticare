@@ -1,7 +1,7 @@
-<?php if ( false != wp_get_attachment_image_src($brand_img_id) ) : ?>
+<?php if ( false != wp_get_attachment_image_src($img_id) ) : ?>
 	<?php
     $args = array(				
-    	'image' => $brand_img_id,
+    	'image' => $img_id,
     	'settings' => array(
             	
 				array(

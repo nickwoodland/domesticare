@@ -67,5 +67,5 @@
 	<?php do_action( 'foundationpress_after_header' ); ?>
 
 <div class="row landmark">
-	<?php include(locate_template('parts/brands-listing.php')); ?>
+	<?php include(locate_template('parts/flip-listing.php')); ?>
 </div>
