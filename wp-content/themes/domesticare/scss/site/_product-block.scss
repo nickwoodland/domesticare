@@ -47,3 +47,15 @@
 		line-height: $rem-base;
 	}
 }
+
+.woocommerce.columns-4{
+	@extend .row;
+
+	.product-block {
+		@extend .columns;
+		@extend .medium-2;
+
+		padding-left:0;
+		padding-right:0;
+	}
+}

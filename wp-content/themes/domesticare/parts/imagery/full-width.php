@@ -8,8 +8,8 @@
                 	
     				array(
     					'name' => 'default',
-    					'width' => 1550,
-    					'height' => 530,
+    					'width' => 1200,
+    					'height' => 450,
     					'crop' => true,
     					'resize' => true,
     				),
