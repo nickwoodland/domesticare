@@ -6,6 +6,5 @@
 		<?php if(is_home()) : ?>
 			<?php include(locate_template('parts/blog-sidebar.php')); ?>
 		<?php endif; ?>
-		<h1> SALE </h1>
 	<?php do_action( 'foundationpress_after_sidebar' ); ?>
 </aside>

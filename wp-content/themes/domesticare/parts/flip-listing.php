@@ -28,7 +28,7 @@
                     <a href="<?php echo $flip_link; ?>">
                         <div class="back">
 
-                            <h2><?php echo $flip_text; ?></h2>
+                            <h2 class="flip-text"><?php echo $flip_text; ?></h2>
                            
                         </div>
                     </a>
@@ -38,5 +38,5 @@
         <?php endif; ?>
         
     <?php endforeach; ?>
-     
+
 <?php endif; ?>

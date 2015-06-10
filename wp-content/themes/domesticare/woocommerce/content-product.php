@@ -39,12 +39,13 @@ if ( ! $product || ! $product->is_visible() )
 		</a>
 		<?php if(false != $product_regular_price ): ?>
 			<span class="product-block__price">
-				£<?php echo $product_regular_price; ?>
+				 <?php if($product_sale_price): ?>
+ 					Was: £<?php echo ($product_regular_price); ?>, Now: £<?php echo $product_sale_price; ?>
+ 				<?php elseif($product_regular_price): ?>
+ 					£<?php echo ($product_regular_price); ?>
+ 				<?php endif; ?>
 			</span>
 		<?php endif; ?>
-		<span class="">
-			2 years guarantee included
-		</span>
 	</div>
 </div>
 

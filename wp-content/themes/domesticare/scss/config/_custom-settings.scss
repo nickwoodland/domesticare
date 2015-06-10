@@ -81,3 +81,8 @@ $image-dir: "../assets/img/";
 
 $row-width: rem-calc(1200);
 $include-xl-html-grid-classes: true;
+
+@font-face {
+    font-family: harlow;
+    src: url("../assets/fonts/harlow.ttf");
+}

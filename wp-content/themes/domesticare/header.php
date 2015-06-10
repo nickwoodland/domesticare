@@ -66,6 +66,8 @@
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>
 
-<div class="row landmark">
-	<?php include(locate_template('parts/flip-listing.php')); ?>
-</div>
+<?php if(is_front_page()): ?>
+	<div class="row landmark">
+		<?php include(locate_template('parts/flip-listing.php')); ?>
+	</div>
+<?php endif; ?>

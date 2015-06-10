@@ -60,9 +60,13 @@
 				    <?php foreach( $image_data['sized_imagery'] AS $break_name => $img_set ) : ?>    
 				    	<?php $sets[] = '['.$img_set['src'].', ('.$break_name.')]'; ?>    
 				    <?php endforeach; ?>
+
+				    <?php $lightbox_img = wp_get_attachment_image_src($slide_id, 'full'); ?>
 				    
 	                <li data-orbit-slide="<?php echo $slide_id; ?>" class="slider__slide">
-	                	<img src="<?php echo $slide->image_src[0]; ?>" data-interchange="<?php echo implode( ',', $sets ); ?>">	   
+	                	<a data-rel="prettyPhoto" href="<?php echo $lightbox_img[0]; ?>">
+	                		<img src="<?php echo $slide->image_src[0]; ?>" data-interchange="<?php echo implode( ',', $sets ); ?>">
+	                	</a>	   
 	                </li>
 
 	        <?php endforeach; ?> 
@@ -145,5 +149,9 @@
     	<?php $sets[] = '['.$img_set['src'].', ('.$break_name.')]' ?>    
     <?php endforeach; ?>
     
-    <img class="" data-interchange="<?php echo implode( ',', $sets ); ?>">
+    <?php $lightbox_img = wp_get_attachment_image_src($thumbnail_id, 'full'); ?>
+
+    <a data-rel="prettyPhoto" href="<?php echo $lightbox_img[0]; ?>">
+    	<img class="" data-interchange="<?php echo implode( ',', $sets ); ?>">
+    </a>
 <?php endif; ?>

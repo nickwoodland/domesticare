@@ -27,6 +27,9 @@
 		</div>
 		<div class="columns medium-3 small-6">
 			<h6>Follow Us</h6>
+			<?php if(of_get_option('facebook_page_url')): ?>
+				<a href="<?php echo of_get_option('facebook_page_url'); ?>"><i class="fa fa-facebook-official fa-3x"></i></a>
+			<?php endif; ?>
 		</div>
 	</div>
 </footer>

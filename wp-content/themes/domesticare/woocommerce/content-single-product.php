@@ -43,7 +43,7 @@ $product_sale_price = ($product_meta['_sale_price'][0] != '' ? $product_meta['_s
 			<div class="columns small-12 landmark--half">
 				<span class="product-single__price ">
 	 				<?php if($product_sale_price): ?>
-	 					£<?php echo $product_sale_price; ?>
+	 					Was: £<?php echo ($product_regular_price); ?>, Now: £<?php echo $product_sale_price; ?>
 	 				<?php elseif($product_regular_price): ?>
 	 					£<?php echo ($product_regular_price); ?>
 	 				<?php endif; ?>

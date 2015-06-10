@@ -63,10 +63,13 @@ img.alignright {
 	}
 	h1{
 		font-size: rem-calc(72px);
+		margin-bottom: $rem-base;
+
 		a{
 			color:$primary-color;	
 			font-weight:400;
-			font-family: 'Droid Serif', serif;
+			font-family: harlow;
+
 		}
 	}
 
