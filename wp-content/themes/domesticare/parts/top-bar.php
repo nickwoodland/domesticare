@@ -10,7 +10,9 @@
                 <?php endif; ?>
             </div>
             <div class="columns medium-6 text-center site-title" data-equalizer-watch>
-                <h1><a href="<?php echo home_url(); ?>" class=""><?php bloginfo( 'name' ); ?></a></h1>
+                <div class="title__wrap">
+                    <h1><a href="<?php echo home_url(); ?>" class=""><?php bloginfo( 'name' ); ?></a></h1>
+                </div>
                 <h2><a href="<?php echo home_url(); ?>" class=""><?php bloginfo( 'description' ); ?></a></h2>
             </div>
             <div class="columns medium-3 header--rightcol" data-equalizer-watch>

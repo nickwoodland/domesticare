@@ -58,17 +58,36 @@ img.alignright {
 }
 
 .site-title{
+
+	.title-wrap{
+		position:relative;
+	}
+
 	h1, h2 {
 		line-height:1;
 	}
 	h1{
-		font-size: rem-calc(72px);
+		font-size: rem-calc(62px);
 		margin-bottom: $rem-base;
+
+
 
 		a{
 			color:$primary-color;	
 			font-weight:400;
 			font-family: harlow;
+
+
+			&::after{
+
+				content: "";
+				display:inline-block;
+				width: 61px;
+				height: 56px;
+				background-image: url('../assets/img/domesticare-man.png');
+				background-size: 100% 100%;
+				margin-left:$rem-base;
+			}
 
 		}
 	}
@@ -80,4 +99,21 @@ img.alignright {
 			font-weight:400;
 		}
 	}
+}
+
+@media only screen and (min-width: $large-breakpoint) {
+
+	.site-title{
+
+		h1{
+			font-size: rem-calc(72px);
+		}
+
+		a::after{
+				width: 68px;
+				height: 62px;
+		}
+
+	}
+
 }
