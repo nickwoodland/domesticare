@@ -33,17 +33,17 @@
         "wpackagist-plugin/disable-users" : "~1.0.0",
         "wpackagist-plugin/disable-wordpress-plugin-updates":"~1.4",
         "wpackagist-plugin/duplicate-post" : "~2.6.0",
-        
+
         "wpackagist-plugin/google-analytics-for-wordpress": "~5.4.0",
-        
+
         "wpackagist-plugin/taxonomy-terms-order": "~1.4.0",
-        
+
         "wpackagist-plugin/w3-total-cache": "~0.9.0",
-        "wpackagist-plugin/woocommerce": "2.3.9",
-        "wpackagist-plugin/wordpress-seo":"~2.1.0",
+        "wpackagist-plugin/woocommerce": "~2.6.4",
+        "wpackagist-plugin/wordpress-seo":"~3.4.0",
         "wpackagist-plugin/wp-thumb":"0.x",
         "wpackagist-plugin/ultimate-coming-soon-page": "1.14.3"
-        
+
     },
     "require-dev": {
         "wpackagist-plugin/developer": "~1.2",
